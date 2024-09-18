@@ -37,13 +37,13 @@ justify-content: flex-start;
 /* Contenedor general */
 .container {
     display: flex;
-    height: 100vh;
+    height: 80vh;
 }
 
 /* Menú lateral (sidebar) */
 .sidebar {
     width: 250px;
-    background: linear-gradient(to bottom right, #007bff, #00aaff);
+    background: linear-gradient(to bottom right, #820eee, #ac32ca);
     color: white;
     display: flex;
     flex-direction: column;
@@ -111,7 +111,7 @@ justify-content: flex-start;
 
 .btn {
     background-color: white;
-    color: #007bff;
+    color: #5729c0;
     padding: 12px 20px;
     margin: 10px 0;
     border: none;
@@ -120,6 +120,8 @@ justify-content: flex-start;
     font-size: 1em;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
 }
 
 .btn:hover {
@@ -136,6 +138,7 @@ justify-content: flex-start;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
+  
 }
 
 h1 {
@@ -146,5 +149,5 @@ h1 {
 
 .main-content:hover h1 {
     transform: scale(1.05);
-    color: #007bff;
+    color: #8d37dd;
 }

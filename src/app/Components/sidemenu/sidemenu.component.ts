@@ -26,13 +26,23 @@ this.visibleMenu=!this.visibleMenu;//falso a verdadero
 setThemeColor(color:string):void{//Define un método que recibe un nuevo color y para cambiar el color de fondo del menú.
  this.theme=color;
 }
+
 setSizeMenu(){
 this.widhtMenu+=10;
 if(this.widhtMenu>300){
 this.widhtMenu=350;
 }
+
+
+
   }
 
+
+
+
+
+
+  
 
 
 

@@ -27,8 +27,6 @@
 </div>>
 
 -->
-
-
 <!-- Contenedor general -->
 <div class="container">
 
@@ -36,7 +34,7 @@
     <aside class="sidebar" id="sidebar">
         <!-- Contenedor de perfil -->
         <div class="profile-container">
-            <img src="https://via.placeholder.com/50" alt="Profile" class="profile-pic">
+            <img src="perfil22.jpg" alt="Perfil" class="profile-pic">
             <h3 class="username">Ariana Vera</h3>
         </div>
 
@@ -52,9 +50,12 @@
 
         <!-- Contenedor de botones de acción -->
         <div class="action-container">
-            <button class="btn" id="changeColorBtn">Change Color</button>
-            <button class="btn" id="changeSizeBtn">Change Size</button>
-            <button class="btn" id="toggleMenuBtn">Toggle Menu</button>
+            <button class="btn" (click)="setThemeColor('red')">Change Color</button>
+            <button class="btn" (click)="setSizeMenu()">Change Size</button>
+            <button class="btn" (click)="setVisibilityMenu()">Back</button>
+           
+        
+            
         </div>
     </aside>
 
