@@ -1,0 +1,70 @@
+<!---3. Diseña la Plantilla HTML:--->
+<div class="sidemenu-conteiner" [style.width]="widhtMenu + 'px'"
+[style.display]="visibleMenu ?'flex':'none'"
+>
+    <!----Dentro del archivo HTML del componente, usa Interpolation para mostrar el valor de la propiedad del nombre de usuario.-->
+<!--<div class="item">
+    <img src="" alt="Perfil.png">
+    <p >{{userName}} </p>
+    <button (click)="setVisibilityMenu()">Back</button>
+</div>
+
+<div class="item">
+    <p><span>📅</span>Dashboard </p>
+     
+</div>
+
+<div class="item">
+    <p><span>👤</span> Profile </p>
+  
+</div>
+
+<div class="item">
+<button class="btn" (click)="setThemeColor('red')">Change Color</button>
+<button class="btn" (click)="setSizeMenu()">Change Size</button>
+
+</div>
+</div>>
+
+-->
+
+
+<!-- Contenedor general -->
+<div class="container">
+
+    <!-- Menú lateral (sidebar) -->
+    <aside class="sidebar" id="sidebar">
+        <!-- Contenedor de perfil -->
+        <div class="profile-container">
+            <img src="https://via.placeholder.com/50" alt="Profile" class="profile-pic">
+            <h3 class="username">Ariana Vera</h3>
+        </div>
+
+        <!-- Contenedor de navegación -->
+        <nav class="nav-container">
+            <a href="#" class="nav-item">
+                <span class="icon">📅</span> Dashboard
+            </a>
+            <a href="#" class="nav-item">
+                <span class="icon">👤</span> Profile
+            </a>
+        </nav>
+
+        <!-- Contenedor de botones de acción -->
+        <div class="action-container">
+            <button class="btn" id="changeColorBtn">Change Color</button>
+            <button class="btn" id="changeSizeBtn">Change Size</button>
+            <button class="btn" id="toggleMenuBtn">Toggle Menu</button>
+        </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <h1>Ejercicio 2</h1>
+    </main>
+
+</div>
+
+
+
+
