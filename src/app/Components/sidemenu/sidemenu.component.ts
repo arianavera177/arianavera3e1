@@ -16,39 +16,26 @@ Un booleano que controla si el menú es visible o no.*/
 
 userName:string="Ariana Vera";
 theme:string="";
-widhtMenu:number=50;
+widhtMenu:number=25;
 visibleMenu:boolean=true;
 
 //2. Añade Métodos al Componente:
-setVisibilityMenu():void{//Define un método que alterna la visibilidad del menú.
+setVisibilityMenu():boolean{//Define un método que alterna la visibilidad del menú.
 this.visibleMenu=!this.visibleMenu;//falso a verdadero
+return this.visibleMenu;
 }
-setThemeColor(color:string):void{//Define un método que recibe un nuevo color y para cambiar el color de fondo del menú.
- this.theme=color;
+
+setThemeColor(color:string):string{//Define un método que recibe un nuevo color y para cambiar el color de fondo del menú.
+ return this.theme=color;
 }
 
 setSizeMenu(){
 this.widhtMenu+=10;
-if(this.widhtMenu>300){
-this.widhtMenu=350;
+if(this.widhtMenu>100){
+this.widhtMenu=25;
 }
-
-
 
   }
 
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
 }
+
