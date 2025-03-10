@@ -33,9 +33,7 @@ setSizeMenu(){
 this.widhtMenu+=10;
 if(this.widhtMenu>100){
 this.widhtMenu=25;
-}
-
   }
-
+  }
 }
 

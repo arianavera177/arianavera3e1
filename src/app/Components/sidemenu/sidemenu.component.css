@@ -1,12 +1,13 @@
+
 .sidemenu-conteiner {
 width: 50%;
 height: 100vh;
+background-color:#aaebf7;
 display: flex;
 flex-direction: column;
-background: linear-gradient(to right,rg (53,28,28),rgb (255,0,0,0.39));
 align-items: center;
 justify-content: flex-start;
-font-family:"Times new Roman";
+border-radius: 1em;
 }
 
 .item{
@@ -16,10 +17,6 @@ font-family:"Times new Roman";
     margin: left 1rem; 
     flex-direction: row;
     width: auto;
-    
-}
-.item span{
-    font-size: 1.5rem;
 
 }
 .item p{
@@ -29,12 +26,13 @@ font-family:"Times new Roman";
     width: 50%;
     display: flex;
     gap: 1rem;
-    align-items: center;
+    align-items: end;
 }
+
 button{
-    background-color=pink;
-    border-radius=1em;
-    padding=10px;
+    background-color:gray;
+    border-radius:1em;
+    padding:10px;
     border:transparent;
 }
 .back{
@@ -43,121 +41,31 @@ button{
 }
 
 
-
-
-
-/* Contenedor general */
-.container {
-    display: flex;
-    height: 80vh;
+.menu{
+    color:gray;
+    background-color:transparent;
+    border:transparent;
+    font-size: 17px;
+}
+.btn{
+    background-color:tomato;
+    border-radius:1em;
+    padding:10px;
+    border:transparent;
+}
+img{
+    width: 54px; /* Ajusta el tamaño de la imagen */
+    height: 50px; /* Asegúrate de que sea cuadrada */
+    border-radius: 30%; /* Esto hace que la imagen sea redonda */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
 }
 
-/* Menú lateral (sidebar) */
-.sidebar {
-    width: 250px;
-    background: linear-gradient(to bottom right, #820eee, #ac32ca);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
-    transition: width 0.3s ease;
-}
 
-/* Perfil */
-.profile-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
 
-.profile-pic {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid white;
-    margin-right: 15px;
-    transition: transform 0.3s ease;
-}
 
-.profile-pic:hover {
-    transform: scale(1.2);
-}
 
-.username {
-    font-size: 1.2em;
-    font-weight: bold;
-}
 
-/* Navegación */
-.nav-container {
-    flex-grow: 1;
-}
+ 
 
-.nav-item {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    transition: color 0.3s ease;
-}
 
-.nav-item .icon {
-    margin-right: 10px;
-    font-size: 1.5em;
-}
 
-.nav-item:hover {
-    color: #ffd700;
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-/* Botones de acción */
-.action-container {
-    margin-top: 20px;
-}
-
-.btn {
-    background-color: white;
-    color: #5729c0;
-    padding: 12px 20px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: center;
-}
-
-.btn:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-3px);
-}
-
-/* Contenido principal */
-.main-content {
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-h1 {
-    font-size: 4em;
-    color: #b0b0b0;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.main-content:hover h1 {
-    width: 100%;
-    height: 100%;
-    color: #8d37dd;
-}

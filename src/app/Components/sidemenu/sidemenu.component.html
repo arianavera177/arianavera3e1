@@ -1,32 +1,29 @@
-<!---3. Diseña la Plantilla HTML:--->
 
-    <button (click)="setVisibilityMenu()" class="menu">Regresar</button>
-
-
-<div class="sidemenu-conteiner" [style.width]="widhtMenu + '%'"
+<button (click)="setVisibilityMenu()" class="menu">☰ Menú</button>
+<div class="sidemenu-conteiner" 
+[style.width]="widhtMenu + '%'"
 [style.backgroundColor]="theme"
 [style.display]="visibleMenu ?'flex':'none'">
 
 <!----Dentro del archivo HTML del componente, usa Interpolation para mostrar el valor de la propiedad del nombre de usuario.-->
 <div class="item">
-    <img  src="" alt="Perfil.png">
+    <img  src="https://th.bing.com/th/id/OIP.Os3dloCTc-JUqOagtZOXVAHaHr?pid=ImgDet&w=474&h=491&rs=1" alt="Perfil.png">
     <p >{{userName}} </p>
-    <button (click)="setVisibilityMenu()" class="back" >Back</button>  
+    <button (click)="setVisibilityMenu()" class="back" >←</button>  
 </div>
 
-<div class="item">
-    <p><span>📅</span>Dashboard </p>
-     
-</div>
 
 <div class="item">
-    <p><span>👤</span> Profile </p>
-  
+    <p id="d"><span>📅</span>Dashboard </p>   
+</div>
+<div class="item">
+    <p id="d"><span>👤</span> Profile </p>
 </div>
 
-<div class="item">
-<button class="btn" (click)="setThemeColor('pink')">Change Color</button>
+<div class="item">  
+<button class="btn" (click)="setThemeColor('#1382a7')">Change Color</button>
 <button class="btn" (click)="setSizeMenu()">Change Size</button>
+</div>
+</div>
 
-</div>
-</div>
+  
